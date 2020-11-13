@@ -1,7 +1,11 @@
 package com.RestAPI.RestAPIDemo.entities;
 
-public class Courses {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Courses {
+    @Id
     private int courseId;
     private String courseName;
     private String description;
